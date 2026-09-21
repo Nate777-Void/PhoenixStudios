@@ -1,0 +1,6 @@
+{
+  "name": "PhoenixStudios",
+  "description": "Art sharing platform, curated marketplace, artist profiles, and custom artwork commission studio with secure fixed-fee transactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

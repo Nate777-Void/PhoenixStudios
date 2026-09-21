@@ -1,0 +1,221 @@
+import { Artwork } from '../types';
+
+export const INITIAL_ARTWORKS: Artwork[] = [
+  {
+    id: 'art-1',
+    title: 'Echoes of Solitude in Gold',
+    artistId: 'user-clara',
+    artistUsername: 'claradelacroix',
+    artistName: 'Clara Delacroix',
+    artistBio: 'Contemporary oil painter based in Lyon, France. Exploring light refractions across European architectural ruins.',
+    artistContact: 'clara.delacroix@gallery-mail.art',
+    category: 'Sacred Vaults',
+    description: 'An atmospheric study of afternoon golden hour slicing across centuries-old weathered stone archways and silent waters.',
+    medium: 'Oil on Canvas',
+    dimensions: '48 x 36 inches',
+    year: 2025,
+    imageUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80',
+    frameStyle: 'gold',
+    isForSale: true,
+    salePrice: 2800,
+    isSold: false,
+    likes: 142,
+    views: 890,
+    displayTier: 'grand_salon',
+    displayFeePaid: 35,
+    exhibitionPassId: 'EXH-2026-9041',
+    displayedAt: '2026-02-10T14:30:00Z',
+    displayDurationDays: 120,
+    comments: [
+      {
+        id: 'c1',
+        author: 'Julian Vance',
+        role: 'Curator',
+        text: 'The chiaroscuro and atmospheric depth in the upper vaulting is deeply commanding.',
+        createdAt: '2 days ago'
+      },
+      {
+        id: 'c2',
+        author: 'Elena Rostova',
+        role: 'Collector',
+        text: 'Inquired about acquisition. The golden glaze technique is breathtaking in person.',
+        createdAt: '5 days ago'
+      }
+    ]
+  },
+  {
+    id: 'art-2',
+    title: 'Chromatic Reverie No. 7',
+    artistId: 'user-taro',
+    artistUsername: 'tarotakahashi',
+    artistName: 'Taro Takahashi',
+    artistBio: 'Tokyo-based digital concept painter merging neo-futurism with Edo era sumi-e ink rhythms.',
+    artistContact: 'takahashi.studio@neo-kyoto.jp',
+    category: 'Neo-Kyoto Rain',
+    description: 'A vibrant burst of kinetic digital brushstrokes capturing electric raindrops dispersing across neon-lit metropolitan streets.',
+    medium: 'Digital Painting',
+    dimensions: '3840 x 2160 px (Archival Giclée 30x40 in)',
+    year: 2026,
+    imageUrl: 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80',
+    frameStyle: 'matte-black',
+    isForSale: true,
+    salePrice: 1450,
+    isSold: false,
+    likes: 98,
+    views: 640,
+    displayTier: 'spotlight',
+    displayFeePaid: 15,
+    exhibitionPassId: 'EXH-2026-8812',
+    displayedAt: '2026-03-01T10:15:00Z',
+    displayDurationDays: 60,
+    comments: [
+      {
+        id: 'c3',
+        author: 'Marcella S.',
+        role: 'Visitor',
+        text: 'The electric cyan juxtaposed against obsidian blacks gives this pure energy.',
+        createdAt: 'Yesterday'
+      }
+    ]
+  },
+  {
+    id: 'art-3',
+    title: 'Quietude in Cobalt & Linen',
+    artistId: 'user-astrid',
+    artistUsername: 'astrid_lindholm',
+    artistName: 'Astrid Lindholm',
+    artistBio: 'Nordic minimalist focusing on organic linen textiles and raw indigo mineral pigments.',
+    artistContact: 'astrid@lindholm-nordic.design',
+    category: 'Indigo Washes',
+    description: 'Layered botanical mineral washes on raw unprimed Belgian linen, celebrating negative space and meditative silence.',
+    medium: 'Mixed Media',
+    dimensions: '40 x 40 inches',
+    year: 2025,
+    imageUrl: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80',
+    frameStyle: 'white-oak',
+    isForSale: false,
+    likes: 76,
+    views: 430,
+    displayTier: 'spotlight',
+    displayFeePaid: 15,
+    exhibitionPassId: 'EXH-2026-7734',
+    displayedAt: '2026-03-05T09:00:00Z',
+    displayDurationDays: 60,
+    comments: [
+      {
+        id: 'c4',
+        author: 'Sarah Chen',
+        role: 'Curator',
+        text: 'Remarkable restraint in the composition. The linen texture grounds the entire piece.',
+        createdAt: '3 days ago'
+      }
+    ]
+  },
+  {
+    id: 'art-4',
+    title: 'Nebula of the Rising Phoenix',
+    artistId: 'user-current',
+    artistUsername: 'phoenix_artist',
+    artistName: 'Elena Vance',
+    artistBio: 'Visual artist and resident creator at PhoenixStudios. Exploring luminous glazes and kinetic impressionism.',
+    artistContact: 'elena@phoenixstudios.art',
+    category: 'Studio Highlights',
+    description: 'An expansive cosmic landscape painted with mineral pigments and gold dust, symbolizing creative rebirth and resilience.',
+    medium: 'Oil on Canvas',
+    dimensions: '40 x 30 inches',
+    year: 2026,
+    imageUrl: 'https://images.unsplash.com/photo-1549887534-1541e9326642?auto=format&fit=crop&w=1200&q=80',
+    frameStyle: 'gold',
+    isForSale: true,
+    salePrice: 1850,
+    isSold: false,
+    likes: 210,
+    views: 1350,
+    displayTier: 'grand_salon',
+    displayFeePaid: 35,
+    exhibitionPassId: 'EXH-2026-9901',
+    displayedAt: '2026-03-10T12:00:00Z',
+    displayDurationDays: 120,
+    comments: [
+      {
+        id: 'c-phx',
+        author: 'Phoenix Gallery Board',
+        role: 'Curator',
+        text: 'A magnificent signature work showcasing the spirit and core mastery of PhoenixStudios.',
+        createdAt: '1 day ago'
+      }
+    ]
+  },
+  {
+    id: 'art-5',
+    title: 'Morning Mist over the Mistral Ridge',
+    artistId: 'user-clara',
+    artistUsername: 'claradelacroix',
+    artistName: 'Clara Delacroix',
+    artistBio: 'Contemporary oil painter based in Lyon, France.',
+    artistContact: 'clara.delacroix@gallery-mail.art',
+    category: 'Plein Air Sketches',
+    description: 'Delicate wet-on-wet watercolor washes conveying morning alpine fog rising from ancient pine valleys.',
+    medium: 'Watercolor & Ink',
+    dimensions: '24 x 18 inches',
+    year: 2026,
+    imageUrl: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=1200&q=80',
+    frameStyle: 'white-oak',
+    isForSale: true,
+    salePrice: 680,
+    isSold: true,
+    soldTo: 'Arthur Pendelton',
+    soldAt: '2026-03-16T15:30:00Z',
+    likes: 64,
+    views: 310,
+    displayTier: 'standard',
+    displayFeePaid: 5,
+    exhibitionPassId: 'EXH-2026-6210',
+    displayedAt: '2026-03-12T11:20:00Z',
+    displayDurationDays: 30,
+    comments: [
+      {
+        id: 'c6',
+        author: 'Arthur Pendelton',
+        role: 'Collector',
+        text: 'Proud to have acquired this piece for my collection. The alpine atmosphere is mesmerizing.',
+        createdAt: '4 days ago'
+      }
+    ]
+  },
+  {
+    id: 'art-6',
+    title: 'Geometric Genesis in Cerulean',
+    artistId: 'user-taro',
+    artistUsername: 'tarotakahashi',
+    artistName: 'Taro Takahashi',
+    artistBio: 'Algorithmic artist exploring sacred geometry and mathematical harmony.',
+    artistContact: 'takahashi.studio@neo-kyoto.jp',
+    category: 'Keyframe Illumination',
+    description: 'Complex recursive geometries rendered in luminous cerulean and deep space indigo.',
+    medium: 'Digital Painting',
+    dimensions: '4000 x 4000 px',
+    year: 2026,
+    imageUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
+    frameStyle: 'minimal',
+    isForSale: true,
+    salePrice: 950,
+    isSold: false,
+    likes: 110,
+    views: 740,
+    displayTier: 'spotlight',
+    displayFeePaid: 15,
+    exhibitionPassId: 'EXH-2026-8190',
+    displayedAt: '2026-02-28T16:00:00Z',
+    displayDurationDays: 60,
+    comments: [
+      {
+        id: 'c7',
+        author: 'Liam Ward',
+        role: 'Collector',
+        text: 'The subtle gradients between the tessellations are sublime.',
+        createdAt: '6 days ago'
+      }
+    ]
+  }
+];
